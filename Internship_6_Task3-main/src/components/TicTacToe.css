@@ -1,0 +1,79 @@
+.tic-tac-toe {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.game-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: inline-block;
+  background-color: #ffffff; /* Brown color for chessboard */
+  border-radius: 10px;
+  overflow: hidden; /* Ensures border radius applies correctly */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.board-row {
+  clear: both;
+}
+
+.board-cell {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  position: relative; /* Enables z-index stacking context for squares */
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  background-color: #fff; /* White background for squares */
+  color: #b5f886;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.square.X {
+  color: #261fe4; /* Red for X */
+}
+
+.square.O {
+  color: #ee5e10; /* Blue for O */
+}
+
+.square:hover {
+  background-color: #ddd; /* Light gray on hover */
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.restart-button:hover {
+  background-color: #0056b3;
+}
